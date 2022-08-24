@@ -10,6 +10,7 @@ function App() {
       <ButtonsMain/>
       <FormRegistration/>
       <FormInput />
+      <a className='logo' href='https://github.com/zPavel39/web_form_practic'>GitHub</a>
     </div>
   );
 }
