@@ -1,0 +1,17 @@
+.visible-btn {
+    margin: 25px;
+    background-color: #238636;
+    border-radius: 20px;
+    padding: 15px 25px;
+    width: 150px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s ease 0s;
+      background-color: #1fb83d;
+    }
+    &:active {
+      background-color: #238636;
+      box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.4);
+    }
+}

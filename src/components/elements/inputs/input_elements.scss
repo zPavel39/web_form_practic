@@ -1,0 +1,40 @@
+
+.input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    &__input {
+        font-size: 28px;
+        width: 500px;
+        height: 49px;
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        border-radius: 14px;
+        padding-left: 15px;
+        &::placeholder {
+            color: #CCCCCC;
+        }
+    }
+    &__label {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    &__error {
+        visibility: hidden;
+    }
+    .error {
+        border: 2px solid red;
+    }
+    .error-2 {
+        visibility: visible;
+        color: red;
+        font-size: 14px;
+    }
+}

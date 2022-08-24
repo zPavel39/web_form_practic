@@ -1,0 +1,74 @@
+.form {
+    position: absolute;
+    display: none;
+    background-color: #161b22;
+    color: #787878;
+    max-width: 600px;
+    margin-top: 100px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px 46px 26px 34px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.7s ease 0s;
+    opacity: 0 ;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    h1{
+        font-weight: 700;
+        font-size: 50px;
+        color: #787878;
+        margin-bottom: 13px;
+        text-align: center;
+    }
+    .registration {
+        display: flex;
+        padding-bottom: 10px;
+        &-star {
+          margin-right: 4px;
+          font-size: 24px;
+        }
+        &__error {
+            position: sticky;
+            visibility: hidden;
+            font-size: 10px;
+        }
+        .error {
+            border: 2px solid red;
+        }
+    }
+    .registration-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__submit {
+          padding: 18px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 16px;
+          color: #FFFFFF;
+          background-color: #238636;
+          border-radius: 10px;
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          &:hover {
+            transition: all 0.3s ease 0s;
+            background-color: #1fb83d;
+          }
+          &:active {
+            background-color: #238636;
+          }
+      }
+  }
+}
+.error-2 {
+    visibility: visible;
+    color: red;
+} 
+.form-visibility{
+  display: block;
+  transition: all 0.7s ease 0s;
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+  box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.3);
+  margin-top: 250px;
+}
